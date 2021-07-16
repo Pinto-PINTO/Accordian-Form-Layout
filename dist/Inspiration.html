@@ -35,9 +35,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
+
     <!-- Inline Styling -->
-    <style>
+    <!-- <style>
         html,
         body,
         div,
@@ -380,7 +380,7 @@
         .controls button:hover {
             background-color: #08ccb7;
         }
-    </style>
+    </style> -->
 
     <script>
         window.console = window.console || function (t) { };
@@ -404,7 +404,7 @@
         <h3>Follow me <i class="fa fa-twitter"></i> <a href="https://twitter.com/soulrider911" target="_blank">
                 @soulrider911</a></h3>
     </header>
-    
+
     <form action="">
         <!--  General -->
         <div class="form-group">
@@ -438,87 +438,69 @@
                 <label for="capacity">Capacity</label>
             </div>
         </div>
-    
+
+    </form>
 
 
 
-        <!-- -----------------Testing Area Collapsible START----------------- -->
 
-        
-        <!-- Collapsible Section Testing -->
-        <div id="accordion">
-            <!-- Contact Person 1 -->
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="false"
-                            aria-controls="collapseOne">
-                            Company Contact Person 1
-                        </button>
-                    </h5>
-                </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordion">
-                    <div class="card-body">
+    <!-- -----------------Testing Area Collapsible START----------------- -->
 
-                        <!-- Contact Person 1 Form -->
-                        <form action="#">
 
-                            <div class="form-group row">
-                                <label for="contact_1_name"
-                                    class="col-sm-4 col-form-label">Name</label>
-                                <div class="col-sm-8">
-                                    <input type="name" class="form-control"
-                                        id="contact_1_name">
-                                </div>
+    <!-- Collapsible Section Testing -->
+    <div id="accordion">
+        <!-- Contact Person 1 -->
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link-hidden collapsed" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        <h2 class="heading">Contact</h2>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+
+                    <!-- Contact Person 1 Form -->
+                    <form action="">
+
+                        <!--  Contact-->
+                        <div class="form-group contact-form-grp">
+                            <div class="controls">
+                                <input type="email" id="email" class="floatLabel" name="email">
+                                <label for="email">Email</label>
                             </div>
-
-                            <div class="form-group row">
-                                <label for="contact_1_email"
-                                    class="col-sm-4 col-form-label">Email</label>
-                                <div class="col-sm-8">
-                                    <input type="email" class="form-control"
-                                        id="contact_1_email">
-                                </div>
+                            <div class="controls">
+                                <input type="text" id="website" class="floatLabel" name="website">
+                                <label for="website">Website</label>
                             </div>
-
-                            <div class="form-group row">
-                                <label for="contact_1_mobile"
-                                    class="col-sm-4 col-form-label">Mobile</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control"
-                                        id="contact_1_mobile">
-                                </div>
+                            <div class="controls">
+                                <input type="tel" id="tel" class="floatLabel" name="tel">
+                                <label for="tel">Telephone</label>
                             </div>
+                        </div>
 
-                            <div class="form-group row">
-                                <label for="contact_1_position"
-                                    class="col-sm-4 col-form-label">Position</label>
-                                <div class="col-sm-8">
-                                    <input type="name" class="form-control"
-                                        id="contact_1_position">
-                                </div>
-                            </div>
+                    </form>
+                    <!-- Contact Person 1 Form END -->
 
-                        </form>
-                        <!-- Contact Person 1 Form END -->
-
-                    </div>
                 </div>
             </div>
-            <!-- Contact Person 1 END -->
         </div>
-    
-    </form>
+        <!-- Contact Person 1 END -->
+    </div>
+
+
+
 
 
     <!-- -----------------Testing Area Collapsible END----------------- -->
 
 
 
-    
+
     <form action="">
 
         <!-- Contact Section Should be collapsed -->
@@ -536,7 +518,7 @@
             <div class="controls">
                 <input type="tel" id="tel" class="floatLabel" name="tel">
                 <label for="tel">Telephone</label>
-            </div>            
+            </div>
         </div>
 
 
@@ -568,7 +550,7 @@
 
 
 
-    
+
     <script
         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
 
