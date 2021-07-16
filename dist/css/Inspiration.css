@@ -423,6 +423,18 @@ h2.heading {
 }
 
 
+/* Editing the top form to modify its padding and margin */
+.form-1-top{
+  padding-bottom: 0px !important;
+}
+
+/* Editing the contact button to allign properly */
+.contact-btn{
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+
 /* ---------------Collapsible Edit END---------------------- */
 
 
