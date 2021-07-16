@@ -356,6 +356,71 @@ h2.heading {
     padding: 0 !important;
 }
 
+.card-head-section{
+  margin-left: 170px !important;
+  padding-left: 10px !important;
+
+  /* Removing the styling of the card header section */
+  background: transparent !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
+
+
+
+/* Contact Btn Remove Styling */
+.contact-btn{
+  background: transparent !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
+
+.contact-btn:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
+
+.contact-btn:active {
+  outline: none !important;
+  border: none !important;
+}
+
+.contact-btn:focus {
+  outline: 0 !important;
+}
+
+.contact-btn {
+  border: none !important;
+}
+
+.contact-btn:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.contact-btn:focus{
+  outline:none !important;
+}
+
+
+/* Contact Btn Remove Styling END */
+
+/* Setting the contact button width */
+.contact-btn{
+  width: 1550px;
+}
+
+/* Removing the edit of the card containing the contact name */
+.whole-card{
+  background: transparent !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
 
 
 /* ---------------Collapsible Edit END---------------------- */
