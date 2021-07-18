@@ -357,8 +357,12 @@ h2.heading {
 } */
 
 .card-head-section{
-  margin-left: 170px !important;
-  padding-left: 10px !important;
+
+  /* Making the contact heading allign in large screen size */
+  /* margin-left: 170px !important;
+  padding-left: 10px !important; */
+
+  
 
   /* Removing the styling of the card header section */
   background: transparent !important;
