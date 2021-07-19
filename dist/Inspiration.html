@@ -406,7 +406,8 @@
                 @soulrider911</a></h3>
     </header>
 
-    <form class="form-1-top" action="">
+    
+    <form class="#" action="#">
         <!--  General -->
         <div class="form-group">
             <h2 class="heading">General</h2>
@@ -440,40 +441,30 @@
             </div>
         </div>
 
-    </form>
 
 
 
+        <!-- -----------------Testing Area Collapsible START----------------- -->
 
+        <!-- Collapsible Section Testing -->
+        <div id="accordion">
+            <!-- Contact Person 1 -->
+            
+            <!-- To activate the collapsible of both contact and address 
+            make the below div class = "card whole-card form-group" -->
+            <div class="card whole-card">
+                <div class="card-header card-head-section pl-0 pr-0 " id="headingOne">
 
-    <!-- -----------------Testing Area Collapsible START----------------- -->
-
-<form action="#" class="">
-    <!-- Collapsible Section Testing -->
-    <div id="accordion">
-        <!-- Contact Person 1 -->
-        <div class="card whole-card">
-            <div class="card-header card-head-section pl-0 pr-0" id="headingOne">
-                <!-- <h5 class="">
-                    <button class="btn btn-link-hidden collapsed contact-btn" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-link-hidden collapsed contact-btn pl-0 pr-0 pb-0" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" type="button">
                         <h2 class="heading">Contact</h2>
                     </button>
-                </h5> -->
-                
-                <button class="btn btn-link-hidden collapsed contact-btn pl-0 pr-0 pb-0" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="false" aria-controls="collapseOne" type="button">
-                    <h2 class="heading">Contact</h2>
-                </button>
-                
-                
-            </div>
 
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body card-body-section pl-0 pr-0">
+                </div>
 
-                    <!-- Contact Person 1 Form -->
-                    <form class="contact-form" action="">
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body card-body-section pl-0 pr-0">
 
                         <!--  Contact-->
                         <div class="form-group contact-form-grp">
@@ -491,58 +482,55 @@
                             </div>
                         </div>
 
-                    </form>
-                    <!-- Contact Person 1 Form END -->
-
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Contact Person 1 END -->
-    </div>
-
-</form>
-
-
-
-    <!-- -----------------Testing Area Collapsible END----------------- -->
-
-
-
-
-    <form class="form-2-bottom" action="">
-
-        <!-- Contact Section Should be collapsed -->
-        <!--  Contact-->
-        <div class="form-group">
-            <h2 class="heading">Contact</h2>
-            <div class="controls">
-                <input type="email" id="email" class="floatLabel" name="email">
-                <label for="email">Email</label>
-            </div>
-            <div class="controls">
-                <input type="text" id="website" class="floatLabel" name="website">
-                <label for="website">Website</label>
-            </div>
-            <div class="controls">
-                <input type="tel" id="tel" class="floatLabel tel-label" name="tel">
-                <label for="tel">Telephone</label>
-            </div>
+            <!-- Contact Person 1 END -->
         </div>
 
+        <!-- -----------------Testing Area Collapsible END-------------------- -->
 
-        <!-- Address Section Should be collapsed -->
-        <!--  Address-->
-        <div class="form-group">
-            <h2 class="heading">Address</h2>
-            <div class="controls">
-                <input type="text" id="postal" class="floatLabel" name="postal">
-                <label for="postal">Postal</label>
+
+
+        <!-- -----------------Address Section START----------------- -->
+
+        <!-- Collapsible Section Testing -->
+        <div id="accordion">
+            <!-- Address -->
+            <div class="card whole-card form-group">
+                <div class="card-header card-head-section pl-0 pr-0 " id="headingTwo">
+
+                    <button class="btn btn-link-hidden collapsed contact-btn pl-0 pr-0 pb-0" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" type="button">
+                        <h2 class="heading">Address</h2>
+                    </button>
+
+                </div>
+
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body card-body-section pl-0 pr-0">
+
+                        <!--  Contact-->
+                        <div class="form-group contact-form-grp">
+                            <div class="controls">
+                                <input type="text" id="postal" class="floatLabel" name="postal">
+                                <label for="postal">Postal</label>
+                            </div>
+                            <div class="controls">
+                                <input type="text" id="delivery" class="floatLabel" name="delivery">
+                                <label for="delivery">Delivery</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="controls">
-                <input type="text" id="delivery" class="floatLabel" name="delivery">
-                <label for="delivery">Delivery</label>
-            </div>
+            <!-- Contact Person 1 END -->
         </div>
+
+        <!-- -----------------Address Section END-------------------- -->
+
 
 
         <!--  More -->
@@ -554,9 +542,11 @@
                 <button>Submit</button>
             </div>
         </div>
+
+
     </form>
 
-
+    
 
 
     <script
@@ -585,11 +575,6 @@
         })(jQuery);
   //# sourceURL=pen.js
     </script>
-
-
-
-
-
 
 
 </body>

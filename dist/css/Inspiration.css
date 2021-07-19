@@ -351,18 +351,7 @@ h2.heading {
 
 /* ----------------Collapsible Edit START------------------- */
 
-/* .contact-form-grp{
-    margin: 0 !important;
-    padding: 0 !important;
-} */
-
 .card-head-section{
-
-  /* Making the contact heading allign in large screen size */
-  /* margin-left: 170px !important;
-  padding-left: 10px !important; */
-
-  
 
   /* Removing the styling of the card header section */
   background: transparent !important;
@@ -413,11 +402,6 @@ h2.heading {
 
 /* Contact Btn Remove Styling END */
 
-/* Setting the contact button width */
-.contact-btn{
-  /* width: 1545px; */
-}
-
 
 /* Removing the edit of the card containing the contact name */
 .whole-card{
@@ -425,6 +409,7 @@ h2.heading {
   box-shadow: 0px 0px 0px transparent !important;
   border: 0px solid transparent !important;
   text-shadow: 0px 0px 0px transparent !important;
+  padding-bottom: 0px !important;
 }
 
 
@@ -439,16 +424,6 @@ h2.heading {
   padding-top: 0px !important;
 }
 
-.contact-form{
-  margin-top: 0px !important;
-  /* padding: 0px !important; */
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-
-  /* Setting the email, website form-element width */
-  /* padding-left: 170px !important;
-  padding-right: 170px !important; */
-}
 
 .card-body-section{
   padding-top: 0px !important;
@@ -465,14 +440,6 @@ h2.heading {
   padding-top: 20px !important;
 }
 
-/* 
-The above editing was done for large screen size */
-
-/* Now making the contact collapsible fully responsive START*/
-
-
-
-/* Now making the contact collapsible fully responsive END*/
 
 
 /* ---------------Collapsible Edit END---------------------- */
