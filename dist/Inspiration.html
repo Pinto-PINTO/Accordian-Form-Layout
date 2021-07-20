@@ -16,8 +16,7 @@
         href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
         color="#111">
 
-
-    <title>CodePen - Forms-Floated Labels</title>
+    <title>Responsive Collapsible Form - Menuka Pinto</title>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/Inspiration.css">
@@ -37,12 +36,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    
     <script>
         window.console = window.console || function (t) { };
     </script>
-
-
 
     <script>
         if (document.location.search.match(/type=embed/gi)) {
@@ -50,43 +46,21 @@
         }
     </script>
 
-    
 
 
 </head>
 
 <body translate="no">
-    <!-- <header>
-        <h1>Responsive Collapsible <span>Form</span></h1>
-        <p>Created entirely with Bootstrap containing multiple collapsible sections and made fully responsive.</p>
-        <h3><i class="fa fa-github"></i> <a href="https://github.com/Pinto-PINTO" target="_blank">
-                Pinto-PINTO
-            </a></h3>
-    </header>     -->
+    
 
-    <!-- Header Section START -->
-
+    <!-- ------------Header Section START------------ -->
     <div class="header">
 
         <!--Content before waves-->
         <div class="inner-header flex">
-            <!--Just the logo.. Don't mind this-->
-            <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
-                <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283"></path>
-                <g>
-                    <path fill="#fff"
-                        d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
-  C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-  c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z">
-                    </path>
-                </g>
-            </svg>
-            <!-- <h1>Simple CSS Waves</h1> -->
             <h1>Responsive Collapsible <span>Form</span></h1>
         </div>
 
-        
 
         <!--Waves Container-->
         <div>
@@ -107,13 +81,13 @@
         <!--Waves end-->
 
     </div>
+    <!-- ------------Header Section END------------ -->
 
-    <!--Header Section END-->
 
-
-    
+    <!-- ------------Form START------------ -->
     <form class="#" action="#">
-        <!--  General -->
+
+        <!--  General Section -->
         <div class="form-group">
             <h2 class="heading">General</h2>
             <div class="controls">
@@ -149,12 +123,11 @@
 
 
 
-        <!-- -----------------Testing Area Collapsible START----------------- -->
+        <!-- -----------------Contact Collapsible START----------------- -->
 
-        <!-- Collapsible Section Testing -->
         <div id="accordion">
-            <!-- Contact Person 1 -->
-            
+            <!-- Contact Section START-->
+
             <!-- To activate the collapsible of both contact and address 
             make the below div class = "card whole-card form-group" -->
             <div class="card whole-card">
@@ -190,18 +163,18 @@
                     </div>
                 </div>
             </div>
-            <!-- Contact Person 1 END -->
+            <!-- Contact Section END -->
         </div>
 
-        <!-- -----------------Testing Area Collapsible END-------------------- -->
+        <!-- -----------------Contact Collapsible END-------------------- -->
 
 
 
-        <!-- -----------------Address Section START----------------- -->
-
-        <!-- Collapsible Section Testing -->
+        <!-- -----------------Address Collapse START----------------- -->
+        
         <div id="accordion">
-            <!-- Address -->
+
+            <!-- Address Section START-->
             <div class="card whole-card form-group">
                 <div class="card-header card-head-section pl-0 pr-0 " id="headingTwo">
 
@@ -216,7 +189,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body card-body-section pl-0 pr-0">
 
-                        <!--  Contact-->
+                        <!-- Address-->
                         <div class="form-group contact-form-grp">
                             <div class="controls">
                                 <input type="text" id="postal" class="floatLabel" name="postal">
@@ -231,16 +204,16 @@
                     </div>
                 </div>
             </div>
-            <!-- Contact Person 1 END -->
+            <!-- Address Section END -->
         </div>
 
-        <!-- -----------------Address Section END-------------------- -->
+        <!-- -----------------Address Collapse END-------------------- -->
 
 
 
-        <!--  More -->
+        <!--  Additional Section -->
         <div class="form-group">
-            <h2 class="heading">More!</h2>
+            <h2 class="heading">Additional</h2>
             <div class="controls">
                 <textarea name="comments" class="floatLabel" id="comments"></textarea>
                 <label for="comments">Comments</label>
@@ -250,8 +223,20 @@
 
 
     </form>
+    <!-- ------------Form END------------ -->
 
-    
+
+    <!-- ------------Footer START------------ -->
+    <div class="content flex">
+        <p>Menuka Pinto |
+            <script>document.write(new Date().getFullYear())</script> |&nbsp;
+        </p>
+        <p><i class="fa fa-github"></i> <a href="https://github.com/Pinto-PINTO" target="_blank">
+                Pinto-PINTO
+            </a></p>
+    </div>
+    <!-- ------------Footer END------------ -->
+
 
 
     <script
@@ -259,26 +244,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script id="rendered-js">
-        (function ($) {
-            function floatLabel(inputType) {
-                $(inputType).each(function () {
-                    var $this = $(this);
-                    // on focus add cladd active to label
-                    $this.focus(function () {
-                        $this.next().addClass("active");
+            (function ($) {
+                function floatLabel(inputType) {
+                    $(inputType).each(function () {
+                        var $this = $(this);
+                        // on focus add cladd active to label
+                        $this.focus(function () {
+                            $this.next().addClass("active");
+                        });
+                        //on blur check field and remove class if needed
+                        $this.blur(function () {
+                            if ($this.val() === '' || $this.val() === 'blank') {
+                                $this.next().removeClass();
+                            }
+                        });
                     });
-                    //on blur check field and remove class if needed
-                    $this.blur(function () {
-                        if ($this.val() === '' || $this.val() === 'blank') {
-                            $this.next().removeClass();
-                        }
-                    });
-                });
-            }
-            // just add a class of "floatLabel to the input field!"
-            floatLabel(".floatLabel");
-        })(jQuery);
-  //# sourceURL=pen.js
+                }
+                // just add a class of "floatLabel to the input field!"
+                floatLabel(".floatLabel");
+            })(jQuery);
     </script>
 
 
