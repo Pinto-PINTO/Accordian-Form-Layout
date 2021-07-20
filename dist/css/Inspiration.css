@@ -1,0 +1,613 @@
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Colors */
+/* ---------------------------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+form {
+  padding: 4em 10%;
+}
+
+header {
+  background-color: #077abc;
+  color: white;
+}
+
+header h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+header h1 i {
+  color: #055a8b;
+}
+
+header h1 span {
+  font-weight: 300;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+header h3,
+header h3 a {
+  color: #32ccfe;
+}
+
+header h3 a,
+header h3 a a {
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header h3 a:hover,
+header h3 a a:hover {
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+h2.heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 450;
+  text-align: left;
+  color: rgba(84, 58, 183, 1);
+  border-bottom: 1.5px solid rgba(0, 172, 193, 1);
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+  /* background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  ); */
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="tel"],
+.controls textarea,
+.controls button,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #888;
+  font-family: "Lato", "sans-serif";
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.controls input[type="text"]:focus,
+.controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls button:focus,
+.controls button:hover,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #9fb1c1;
+}
+
+.controls input[type="text"]:focus + label,
+.controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls button:focus + label,
+.controls button:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #077abc;
+  cursor: text;
+}
+
+.controls .fa-sort {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #999;
+}
+
+.controls select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.controls label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+
+.controls label.active {
+  top: -11px;
+  color: #555;
+  background-color: white;
+}
+
+.controls textarea {
+  resize: none;
+  height: 200px;
+}
+
+
+
+/*------- Submit Button Edit START ---------------*/
+
+.controls button {
+  padding: 16px 42px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: rgba(84, 58, 183, 1);
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}
+.controls button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform-style: flat;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.controls button:focus, .controls button:hover {
+  background: rgba(0, 172, 193, 1);
+}
+
+
+/*------- Submit Button Edit END ---------------*/
+
+
+
+
+
+
+/* ----------------Collapsible Edit START------------------- */
+
+.card-head-section{
+
+  /* Removing the styling of the card header section */
+  background: transparent !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
+
+
+
+/* Contact Btn Remove Styling */
+.contact-btn{
+  background: transparent !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
+
+.contact-btn:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+}
+
+.contact-btn:active {
+  outline: none !important;
+  border: none !important;
+}
+
+.contact-btn:focus {
+  outline: 0 !important;
+}
+
+.contact-btn {
+  border: none !important;
+}
+
+.contact-btn:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.contact-btn:focus{
+  outline:none !important;
+}
+
+
+/* Contact Btn Remove Styling END */
+
+
+/* Removing the edit of the card containing the contact name */
+.whole-card{
+  background: transparent !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: 0px solid transparent !important;
+  text-shadow: 0px 0px 0px transparent !important;
+  padding-bottom: 0px !important;
+}
+
+
+/* Editing the top form to modify its padding and margin */
+.form-1-top{
+  padding-bottom: 0px !important;
+}
+
+/* Editing the contact button to allign properly */
+.contact-btn{
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+
+.card-body-section{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.card-head-section{
+  padding-bottom: 0px !important;
+}
+
+
+.form-2-bottom{
+  /* Height between the 2 sections contact and the below section */
+  padding-top: 20px !important;
+}
+
+
+
+/* ---------------Collapsible Edit END---------------------- */
+
+
+
+
+/* ----------------Header Section Edit START--------------- */
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+}
+
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height: 30vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+
+/* ----------------Header Section Edit END--------------- */
+
+
+
+
+
+
+
+
+
